@@ -67,3 +67,46 @@ The performance of the algorithms in relation to each other is also consistent a
 
 Algorithm efficiency was compared by measuring the average guessing time per game in Experiment 3. The EntropyGuesser, SimilarityGuesser and random baseline all had a roughly similar average guessing time (0.029-0.044 seconds), while the MinVocabGuesser took roughly ten times as long to complete each game (averaging 0.335 seconds).
 
+### Experiment 1:
+
+| Guesser type | Average guesses | Win rate |
+| :--- | ---: | ---: |
+| Random baseline (WordleGuesser) | 4.08 | 98.57% |
+| Entropy (EntropyGuesser) | 3.61 | 99.48% |
+| Similarity (SimilarityGuesser) | 3.62 | 99.35% |
+| Min. vocabulary (MinVocabGuesser) | 3.63 | 99.4% |
+
+Guesser performance on small target vocabulary with small guess vocabulary
+
+### Experiment 2:
+
+| Guesser type | Average guesses | Win rate |
+| :--- | ---: | ---: |
+| Random baseline (WordleGuesser) | 4.91 | 90.5% |
+| Entropy (EntropyGuesser) | 4.26 | 95.94% |
+| Similarity (SimilarityGuesser) | 4.42 | 93.95% |
+| Min. vocabulary (MinVocabGuesser) | 4.36 | 95.03 % |
+
+Guesser performance on small target vocabulary  with large guess vocabulary
+
+### Experiment 3:
+
+| Guesser type | Average guesses | Win rate |
+| :--- | ---: | ---: |
+| Random baseline (WordleGuesser) | 5.14 | 84.45% |
+| Entropy (EntropyGuesser) | 4.58 | 90.82% |
+| Similarity (SimilarityGuesser) | 4.71 | 89.08% |
+| Min. vocabulary (MinVocabGuesser) | 4.65 | 89.99% |
+
+Guesser performance on large target vocabulary with large guess vocabulary
+
+### Algorithm efficiency:
+
+| Guesser type | Mean guessing time per game (in seconds) | 
+| :--- | ---: |
+| Random baseline (WordleGuesser) | 0.029 |
+| Entropy (EntropyGuesser) | 0.031 |
+| Similarity (SimilarityGuesser) | 0.044 |
+| Min. vocabulary (MinVocabGuesser) | 0.335 |
+
+Average guessing speed on large target vocabulary with large guess vocabulary
